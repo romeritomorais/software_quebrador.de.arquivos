@@ -13,8 +13,6 @@ depois o inicie pelo terminal: /opt/QuebradordeArquivos
 { +--------------------------------------------------------------------------------
   Esse Software foi escrito por romerito morais no RAD Studio Delphi Rio 10.3.3
   linkedIn: https://www.linkedin.com/in/romeritomorais/
-  email: Romeritomorais@outlook.com.br
-  Fone: 91 9 9994-2079
   +-------------------------------------------------------------------------------- }
 
 unit Principal;
