@@ -1,0 +1,296 @@
+object FMXForm: TFMXForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Quebrador de Arquivos'
+  ClientHeight = 139
+  ClientWidth = 496
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object RecLayout: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Size.Width = 496.000000000000000000
+    Size.Height = 139.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    object Layout1: TLayout
+      Align = Client
+      Size.Width = 496.000000000000000000
+      Size.Height = 139.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Layout3: TLayout
+        Align = Top
+        Position.Y = 33.000000000000000000
+        Size.Width = 496.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object EditSize: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Left
+          TabOrder = 1
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claDimgray
+          Position.X = 307.000000000000000000
+          Position.Y = 13.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 13.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 178.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'exemplo: 10'
+          StyledSettings = [Family, Style]
+        end
+        object EditCaminho: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Left
+          TabOrder = 0
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claDimgray
+          Position.X = 10.000000000000000000
+          Position.Y = 13.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 13.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 287.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'selecione o arquivo'
+          StyledSettings = [Family, Style]
+          object Procurar: TSearchEditButton
+            CanFocus = False
+            Cursor = crArrow
+            Size.Width = 33.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnClick = ProcurarClick
+          end
+        end
+        object ShadowEffect1: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.300000011920929000
+          ShadowColor = claDimgray
+        end
+      end
+      object Layout2: TLayout
+        Align = Top
+        Size.Width = 496.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object ComboTipo: TComboEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Left
+          TabOrder = 0
+          ItemHeight = 19.000000000000000000
+          Items.Strings = (
+            'quebrar arquivos'
+            'juntar arquivos')
+          ItemIndex = 0
+          Text = 'quebrar arquivos'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claDarkgray
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          StyledSettings = [Family, Style]
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Size.Width = 159.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          OnChange = ComboTipoChange
+        end
+        object Layout6: TLayout
+          Align = Client
+          Size.Width = 327.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object TextSize: TText
+            Align = Client
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 317.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 10.000000000000000000
+            TextSettings.FontColor = claDimgray
+            TextSettings.HorzAlign = Trailing
+          end
+        end
+        object ShadowEffect2: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.200000002980232200
+          ShadowColor = claDimgray
+        end
+      end
+      object Layout4: TLayout
+        Align = Client
+        Size.Width = 496.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Layout5: TLayout
+          Align = Right
+          Padding.Top = 10.000000000000000000
+          Padding.Bottom = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 307.000000000000000000
+          Size.Width = 179.000000000000000000
+          Size.Height = 58.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Rectangle1: TRectangle
+            Align = Client
+            Fill.Color = claWhite
+            Size.Width = 179.000000000000000000
+            Size.Height = 38.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claGainsboro
+            XRadius = 4.000000000000000000
+            YRadius = 4.000000000000000000
+            object TextExec: TText
+              Align = Client
+              Size.Width = 179.000000000000000000
+              Size.Height = 38.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'executar'
+              TextSettings.Font.Size = 14.000000000000000000
+              TextSettings.FontColor = claDimgray
+              OnClick = TextExecClick
+            end
+          end
+          object ShadowEffect3: TShadowEffect
+            Distance = 3.000000000000000000
+            Direction = 45.000000000000000000
+            Softness = 0.300000011920929000
+            Opacity = 0.300000011920929000
+            ShadowColor = claDarkgray
+          end
+        end
+        object Layout10: TLayout
+          Align = Left
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 11.000000000000000000
+          Margins.Bottom = 11.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 11.000000000000000000
+          Size.Width = 287.000000000000000000
+          Size.Height = 36.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object TextTime: TText
+            Align = Client
+            Size.Width = 287.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            TextSettings.FontColor = claDarkgray
+            TextSettings.HorzAlign = Leading
+            object ShadowEffect4: TShadowEffect
+              Distance = 2.000000000000000000
+              Direction = 45.000000000000000000
+              Softness = 0.300000011920929000
+              Opacity = 0.300000011920929000
+              ShadowColor = claDimgray
+            end
+          end
+        end
+      end
+    end
+  end
+  object OpenFile: TOpenDialog
+    Filter = 'csv|*.csv'
+    Options = [ofHideReadOnly, ofEnableSizing, ofForceShowHidden]
+    Title = 'Selecione o Arquivo'
+    Left = 336
+    Top = 8
+  end
+  object SaveFiles: TSaveDialog
+    FileName = 
+      'C:\Users\Administrador\Downloads\Firemonkey-master\FMXExpress\.g' +
+      'itattributes'
+    Options = [ofHideReadOnly, ofNoChangeDir, ofEnableSizing]
+    Left = 376
+    Top = 8
+  end
+  object RecConfirmacao: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Size.Width = 496.000000000000000000
+    Size.Height = 139.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claNull
+    Visible = False
+    object Layout7: TLayout
+      Align = Client
+      Size.Width = 496.000000000000000000
+      Size.Height = 139.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Layout8: TLayout
+        Align = Top
+        Margins.Top = 15.000000000000000000
+        Position.Y = 15.000000000000000000
+        Size.Width = 496.000000000000000000
+        Size.Height = 74.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object TextMensagem: TText
+          Align = Client
+          Margins.Left = 30.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Size.Width = 436.000000000000000000
+          Size.Height = 74.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claDimgray
+        end
+      end
+      object Layout9: TLayout
+        Align = Client
+        Size.Width = 496.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Rectangle2: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Margins.Left = 150.000000000000000000
+          Margins.Right = 150.000000000000000000
+          Position.X = 150.000000000000000000
+          Size.Width = 196.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claLightgray
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          object TextResult: TText
+            Align = Client
+            Size.Width = 196.000000000000000000
+            Size.Height = 38.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'voltar'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.FontColor = claDimgray
+            OnClick = TextResultClick
+          end
+        end
+      end
+    end
+  end
+end
