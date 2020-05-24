@@ -8,6 +8,8 @@ depois o inicie pelo terminal: /opt/QuebradordeArquivos
 ![](https://github.com/romeritomorais/Quebrador-de-Arquivos/blob/master/screenshot/Screenshot_20200524_010740.png)
 
 ```
+ Código Fonte:
+ 
 { +--------------------------------------------------------------------------------
   Esse Software foi escrito por romerito morais no RAD Studio Delphi Rio 10.3.3
   linkedIn: https://www.linkedin.com/in/romeritomorais/
