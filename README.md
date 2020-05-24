@@ -1,4 +1,5 @@
 
+```
 extraia o arquivo na pasta /opt
 de permissão: sudo chmod +x QuebradordeArquivos
 depois o inicie pelo terminal: /opt/QuebradordeArquivos
